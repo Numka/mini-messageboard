@@ -19,4 +19,4 @@ app.use((req, res, next) => {
   res.status(404).render('404');
 })
 
-app.listen(3000);
+module.exports = app;
