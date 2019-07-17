@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const messages = [{ text: "Hi There!", user: "Amando", added: new Date()},
-{ text: "Hello World!", user: "Greg", added: new Date()}];
+const messages = [];
 
 router.post('/new', (req, res, next) => {
   messages.push({text: req.body.message, user: req.body.user, added: new Date()});
@@ -14,3 +13,7 @@ router.get('/', (req, res, next) => {
 });
 
 module.exports = router;
+
+
+//{ text: "Hi There!", user: "Amando", added: new Date()},
+//{ text: "Hello World!", user: "Greg", added: new Date()}
