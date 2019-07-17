@@ -7,3 +7,8 @@ html(lang="en")
     title #title
   body
     h1 Main page
+    each message in mes
+      ul
+        li #{message.user}
+        li #{message.text}
+        li #{message.added}

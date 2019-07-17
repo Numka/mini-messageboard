@@ -7,3 +7,10 @@ html(lang="en")
     title #title
   body
     h1 New message
+      form(action="/new", method="POST")
+        div.form-control
+          label(for="message") Text
+          input(type="text", name="message")#message
+          label(for="user") User
+          input(type="text", name="user")#user
+        button(type="submit") Submit Message
