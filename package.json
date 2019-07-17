@@ -2,13 +2,18 @@
   "name": "mini-messageboard",
   "version": "0.0.0",
   "private": true,
+  "engines": {"node": "10.16.0"},
   "author": "Numka",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.16.1",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }
