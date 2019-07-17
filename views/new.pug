@@ -5,6 +5,7 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title #title
+    link(rel="stylesheet", href="/stylesheets/style.css")
   body
     h1 New message
       form(action="/new", method="POST")
@@ -13,4 +14,4 @@ html(lang="en")
           input(type="text", name="message")#message
           label(for="user") User
           input(type="text", name="user")#user
-        button(type="submit") Submit Message
+        button.btn(type="submit") Submit Message

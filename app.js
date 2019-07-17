@@ -10,6 +10,7 @@ const newRouter = require('./routes/new');
 const mainRouter = require('./routes/main');
 
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(mainRouter);
 app.use(newRouter);

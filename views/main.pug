@@ -5,10 +5,14 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title #title
+    link(rel="stylesheet", href="/stylesheets/style.css")
   body
-    h1 Main page
+    h1 Mini-messageboard
+    a(href="/new") Add message
     each message in mes
-      ul
+      p Message
+      ul.message-info
         li #{message.user}
-        li #{message.text}
+        li 
+          p #{message.text}
         li #{message.added}

@@ -2,6 +2,7 @@
   "name": "mini-messageboard",
   "version": "0.0.0",
   "private": true,
+  "author": "Numka",
   "scripts": {
     "start": "nodemon app.js"
   },
